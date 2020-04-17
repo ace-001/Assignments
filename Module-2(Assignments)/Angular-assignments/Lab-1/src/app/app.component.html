@@ -1,0 +1,27 @@
+
+<h3> Angular 2 Operation</h3>
+<form name="form"  (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>ID </label>
+        <input type="number" class="from-control" name="Id" [(ngModel)]="id"/>
+    </div>
+    <div class="form-group">
+        <label>Name </label>
+        <input type="text" class="from-control" name="name" [(ngModel)]="name"/>
+    </div>
+    <div class="form-group">
+        <label> Salary </label>
+        <input type="number" class="from-control" name="Salary" [(ngModel)]="salary"/>
+    </div>
+    <div class="form-group">
+        <label> Department</label>
+        <input type="text" class="from-control" name="Department" [(ngModel)]="department"/>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary">Add Employee</button>
+    </div>
+    <p> {{id}} {{name}} {{salary}} {{ department }} </p>
+  
+</form>
+
