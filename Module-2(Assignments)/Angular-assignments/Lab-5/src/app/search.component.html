@@ -1,0 +1,15 @@
+<div>
+    <pre>
+    <label>Search Movie</label>  <select #genre id="genre">
+        <option value="drama">Drama</option>
+        <option value="fiction">Fiction</option>
+        <option value="satire">Satire</option>
+    </select>    <button (click)="searchMovie(genre.value)">Search Movie</button>
+    <table border="2" align="center" bgcolor="#ea1a23">
+        <tr *ngFor="let m of movieData">
+            <td>{{m.mname}}</td>
+            <td>{{m.mrate}}</td>
+        </tr>
+    </table>
+</pre>
+</div>

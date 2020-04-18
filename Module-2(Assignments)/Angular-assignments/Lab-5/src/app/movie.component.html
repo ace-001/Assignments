@@ -1,0 +1,11 @@
+<div>
+    Movie Name:<span color=red>*</span><input #mname type="text" required>
+    Give Rating:<span color=red>*</span><input #mrate type="text" required>
+    <label for="genre">Select Genre:</label> 
+    <select #genre id="genre">
+        <option value="drama">Drama</option>
+        <option value="fiction">Fiction</option>
+        <option value="satire">Satire</option>
+    </select>
+    <button (click)="addMovie(mname.value,mrate.value,genre.value)">Add Movie</button>
+</div>
